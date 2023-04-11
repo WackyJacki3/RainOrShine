@@ -129,15 +129,6 @@ function App() {
     }
   }
 
-//   const handleChange = (event) => {
-//     // console.log(event.target.value);
-//     const { name, value } = event.target;
-//     setMeme(prevMeme => ({
-//         ...prevMeme,
-//         [name]: value
-//     }))
-// }
-
   return (
 
     <AppStart weatherState={weatherStatePic(weatherState)}>
@@ -154,7 +145,7 @@ function App() {
         <TopDiv>
           <Location>
             {data.location 
-            ? `${data.location.name}`
+            ? `${data.location.name}, ${data.location.country}`
             : null}
           </Location>
           <Temp>

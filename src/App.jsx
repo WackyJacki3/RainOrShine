@@ -84,8 +84,6 @@ const SearchBarField = styled.input`
   }
 `;
 
-
-
 function App() {
   const [data, setData] = useState({})
   const [locationHolder, setLocationHolder] = useState('');
